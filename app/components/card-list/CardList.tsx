@@ -13,6 +13,8 @@ interface CardListProps {
 }
 
 const CardList = async ({ page, cat, limit }: CardListProps) => {
+    const res = await getPosts({ page, cat, limit })
+    if(!res) return null;
     const {
         posts,
         pagination: {
@@ -20,7 +22,7 @@ const CardList = async ({ page, cat, limit }: CardListProps) => {
             hasPrev,
             hasNext
         }
-    } = await getPosts({ page, cat, limit })
+    } = res;
 
     return (
         <div className={styles.container}>

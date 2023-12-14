@@ -51,12 +51,7 @@ export const posts: Post[] = [
     img: "https://res.cloudinary.com/dgjbgcmqm/image/upload/v1702570211/images_q72scy.jpg",
     views: 100,
     catSlug: "next-js",
-    cat: {
-      id: "1",
-      title: "Next JS",
-      slug: "next-js",
-      color: "#dddddd",
-    },
+    userEmail: "p0h5y@example.com",
   },
   {
     id: "2",
@@ -67,11 +62,6 @@ export const posts: Post[] = [
     img: "https://res.cloudinary.com/dgjbgcmqm/image/upload/v1702570212/images_1_cwztpn.jpg",
     views: 100,
     catSlug: "prisma",
-    cat: {
-      id: "2",
-      title: "Prisma",
-      slug: "prisma",
-      color: "#7fb88133",
-    },
+    userEmail: "p0h5y@example.com",
   }
 ];

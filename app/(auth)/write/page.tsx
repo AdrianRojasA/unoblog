@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
 "use client";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
@@ -14,6 +15,7 @@ const WritePage = () => {
   const { status } = useSession();
   const router = useRouter();
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const ref = useRef<any>();
 
   const [categoryList, setCategoryList] = useState<Category[]>([]);

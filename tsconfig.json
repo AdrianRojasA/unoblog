@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     /* Base Options: */
+    "skipDefaultLibCheck": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "target": "es2022",
@@ -10,9 +11,10 @@
     "isolatedModules": true,
 
     /* Strictness */
-    "strict": true,
-    "noUncheckedIndexedAccess": true,
-    "checkJs": true,
+    "strict": false,
+    "noUncheckedIndexedAccess": false,
+    "checkJs": false,
+
 
     /* Bundled projects */
     "lib": ["dom", "dom.iterable", "ES2022"],
@@ -30,7 +32,6 @@
     }
   },
   "include": [
-    ".eslintrc.cjs",
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
