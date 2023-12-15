@@ -16,7 +16,7 @@ const LoginPage = () => {
     <div className={styles.container}>
       <div className='w-full bg-green'>
         <div className={styles.socialButton} onClick={() => signIn("google")} >
-          Sign in with Google
+          Sign in with Spotify
         </div>
         <div className={styles.socialButton} onClick={() => signIn("github")}>
           Sign in with Github
